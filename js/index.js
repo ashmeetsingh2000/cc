@@ -210,174 +210,8 @@ function paly_video(what) {
 
 
 
-// mobile client review carousal
-var mobile_review_carousal = document.getElementById('mobile_review_carousal')
-var mobile_review_arr = [
-    `
-        <div class="client_box_image">
-
-            <video controls id='myVideo_Parul'>
-                <source src="./Parul_s_testimonial.mov" type="video/mp4">
-            </video>
-
-        </div>
-        <div class="client_review_box_heading">
-            Parul Sharma
-        </div>
-        <div class="client_review_box_client_Name" id='Parul_para'>
-            Chetali's reviews are a boon for people like me who have zero knowledge
-            on skincare and haircare. She connects instantaneously with her viewers
-            and she is loved by so many like me
-        </div>
-        <div class="invisible_play_button" onclick="paly_video('myVideo_Parul')"></div>
-    `,
-    `
-        <div class="client_box_image">
-
-                        <video controls id='myVideo_Rashmi'>
-                            <source src="./Rashmi_s_Testimonial.mov" type="video/mp4">
-                        </video>
-
-                    </div>
-                    <div class="client_review_box_heading">
-                        Rashmi Ranjan
-                    </div>
-                    <div class="client_review_box_client_Name">
-                        I love all of your videos, and I am truly inspired by them. Love the
-                        fact that before sharing any product information, you do a lot of
-                        research and due diligence.
-                    </div>
-                    <div class="invisible_play_button" onclick="paly_video('myVideo_Rashmi')"></div>
-    
-    `,
-    `
-        <div class="client_box_image">
-
-            <video controls id='myVideo_Shikha'>
-                <source src="./Shikha_s_testimonial.mp4" type="video/mp4">
-            </video>
-
-        </div>
-        <div class="client_review_box_heading">
-            Shikha Lal
-        </div>
-        <div class="client_review_box_client_Name">
-            Been following Chetali for a while now, and I absolutely love her
-            recommendations - non-biased, very well-researched, thorough, yet they
-            are simple!
-        </div>
-        <div class="invisible_play_button" onclick="paly_video('myVideo_Shikha')"></div>
-
-    `,
-    `
-    <div class="client_box_image">
-
-                        <video controls id='myVideo_Shilu'>
-                            <source src="./Shilu_s_testimonial.mp4" type="video/mp4">
-                        </video>
-
-                    </div>
-                    <div class="client_review_box_heading">
-                        Shilu Khanna
-                    </div>
-                    <div class="client_review_box_client_Name">
-                        Been watching your videos for a couple of years, and must admit that it
-                        has completely changed my skincare game. Straight forward, easy to
-                        understand and adopt.
-                    </div>
-                    <div class="invisible_play_button" onclick="paly_video('myVideo_Shilu')"></div>
-    `,
-    `
-    <div class="client_box_image">
-
-                        <video controls id="myVideo_Mehak">
-                            <source src="./Mehak_Testimonial.mp4" type="video/mp4">
-                        </video>
-
-                    </div>
-                    <div class="client_review_box_heading">
-                        Mehak Chadha
-                    </div>
-                    <div class="client_review_box_client_Name">
-                        I have been following Chetali's YT channel since 3 years now, and
-                        whatever recommendations I have followed have magically worked for me
-                    </div>
-                    <div class="invisible_play_button" onclick="paly_video('myVideo_Mehak')"></div>
-    `,
-    `
-    <div class="client_box_image">
-
-                        <video controls id='myVideo_Gita'>
-                            <source src="./Gita_s_testimonial.mp4" type="video/mp4">
-                        </video>
-
-                    </div>
-                    <div class="client_review_box_heading">
-                        Gita Choprra
-                    </div>
-                    <div class="client_review_box_client_Name">
-                        Big shoutout to Chetali for doing an incredible job in creating such honest content!
-                    </div>
-                    <div class="invisible_play_button" onclick="paly_video('myVideo_Gita')"></div>
-
-    `
-]
-
-var mobile_index = 0;
-
-mobile_review_carousal_workings()
-function mobile_review_carousal_workings() {
-
-    let box = document.createElement("div");
-    box.classList.add('client_review_mobile_box');
-    box.classList.add('mobile_right_right_side');
-    box.innerHTML = mobile_review_arr[index];
-    mobile_review_carousal.appendChild(box);
-    truncateText()
-
-    setTimeout(() => {
-
-        let remove_current_active = mobile_review_carousal.querySelector('.current_Active');
-        remove_current_active.classList.remove('current_Active');
-        remove_current_active.classList.add('mobile_left_side');
-
-        setTimeout(() => {
-            remove_current_active.remove()
-        }, 1500);
-
-        let remove_right_active = mobile_review_carousal.querySelector('.mobile_right_side');
-        remove_right_active.classList.remove('mobile_right_side');
-        remove_right_active.classList.add('current_Active');
-
-        let remove_right_right_active = mobile_review_carousal.querySelector('.mobile_right_right_side');
-        remove_right_right_active.classList.remove('mobile_right_right_side');
-        remove_right_right_active.classList.add('mobile_right_side');
-
-    }, 500);
 
 
-    setTimeout(() => {
-        if (mobile_index == mobile_review_arr.length - 1) {
-            mobile_index = 0
-            mobile_review_carousal_workings();
-        }
-        else {
-            mobile_index++;
-            mobile_review_carousal_workings();
-        }
-    }, 5000);
-
-}
-
-function truncateText() {
-
-    if (document.getElementById("Parul_para")) {
-        var parul_text = document.getElementById("Parul_para").innerHTML;
-        var parul_text_truncated = parul_text.substring(0, 151) + "...";
-        document.getElementById("Parul_para").innerHTML = parul_text_truncated;
-    }
-}
-// mobile client review carousal
 
 
 
@@ -393,3 +227,113 @@ function open_close_mobile_box(field) {
     field.classList.add('active_mobile_box');
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+let mobile_socialIndex = 1;
+show_mobile_social_Slides(mobile_socialIndex);
+
+function mobile_social_plusSlides(n) {
+    show_mobile_social_Slides(mobile_socialIndex += n);
+}
+
+function mobile_social_currentSlide(n) {
+    show_mobile_social_Slides(mobile_socialIndex = n);
+}
+
+function show_mobile_social_Slides(n) {
+    let i;
+    let slides = document.getElementsByClassName("mobile_social_Slides");
+    let dots = document.getElementsByClassName("mobile_social_dot");
+    if (n > slides.length) { mobile_socialIndex = 1 }
+    if (n < 1) { mobile_socialIndex = slides.length }
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[mobile_socialIndex - 1].style.display = "block";
+    dots[mobile_socialIndex - 1].className += " active";
+}
+
+
+var socialtimeout;
+function do_mobile_social_Stuff() {
+    mobile_social_plusSlides(1)
+
+    socialtimeout = setTimeout(do_mobile_social_Stuff, 5000);
+}
+do_mobile_social_Stuff()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+let mobile_review_Index = 1;
+show_mobile_review_Slides(mobile_review_Index);
+
+function mobile_review_plusSlides(n) {
+    show_mobile_review_Slides(mobile_review_Index += n);
+}
+
+function mobile_review_currentSlide(n) {
+    show_mobile_review_Slides(mobile_review_Index = n);
+}
+
+function show_mobile_review_Slides(n) {
+    let i;
+    let slides = document.getElementsByClassName("mobile_review_Slides");
+    let dots = document.getElementsByClassName("mobile_review_dot");
+    if (n > slides.length) { mobile_review_Index = 1 }
+    if (n < 1) { mobile_review_Index = slides.length }
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[mobile_review_Index - 1].style.display = "block";
+    dots[mobile_review_Index - 1].className += " active";
+}
+
+
+var socialtimeout;
+function do_mobile_review_Stuff() {
+    mobile_review_plusSlides(1)
+
+    socialtimeout = setTimeout(do_mobile_review_Stuff, 5000);
+}
+do_mobile_review_Stuff()
