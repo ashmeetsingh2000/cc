@@ -252,14 +252,19 @@
     max-width: 100%;
     margin: 0 auto;
     padding: 80px 20px 30px 20px;
+}
+
+.about_coach_container {
+    width: 100%;
 
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .coach_image {
     width: 45%;
-
+    height: 520px;
     background-image: url('https://i.postimg.cc/15cZPnPd/Know-your-coach.jpg');
     background-repeat: no-repeat;
     background-position: top center;
@@ -285,18 +290,18 @@
     letter-spacing: 0.03em;
 
     color: rgba(0, 0, 0, 0.87);
+    display: none;
 }
 
 .mobile_coach_detail_heading {
     font-family: bebas;
     text-align: center;
     font-weight: 400;
-    font-size: 35px;
+    font-size: 45px;
     letter-spacing: 0.03em;
 
     color: rgba(0, 0, 0, 0.87);
-    margin: 0 0 20px 0;
-    display: none;
+    margin: 0 0 0px 0;
 }
 
 .coach_points_Container {
@@ -316,10 +321,11 @@
 }
 
 .coach_points_heading_image {
-    background: #FFFFFF;
-    box-shadow: 0px 6px 28px rgba(0, 0, 0, 0.12);
-    border-radius: 4px;
-    padding: 7px 10px 4px 10px;
+    background-color: transparent;
+}
+
+.coach_points_heading_image img {
+    width: 40px;
 }
 
 .coach_points_heading_text {
