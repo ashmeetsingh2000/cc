@@ -1,0 +1,307 @@
+@media screen and (max-width: 1200px) {}
+
+@media screen and (max-width: 1100px) {
+
+    .hero_section_heading {
+        font-size: 4vw;
+    }
+
+    .hero_section_para {
+        font-size: 1.5vw;
+    }
+
+    .hero_section_button {
+        font-size: 16px;
+    }
+
+}
+
+@media screen and (max-width: 1000px) {
+
+    .hero_section_para {
+        width: 350px;
+    }
+
+    .good_hands_grid_container {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+
+
+    .coach_detail_heading {
+        font-size: 4vw;
+    }
+
+    .coach_points_heading_text {
+        font-size: 2vw;
+    }
+
+    .coach_points_byline {
+        font-size: 1.5vw;
+    }
+
+    .latest_wins_heading {
+        font-size: 35px;
+    }
+
+
+    .latest_wins_para {
+        font-size: 14px;
+        text-align: left;
+    }
+
+    .social_media_post_carousal {
+        width: 1200px;
+        max-width: 100%;
+        height: 240px;
+    }
+
+    .caurosal_box {
+        height: 240px;
+    }
+
+    .caurosal_box img {
+        height: 240px;
+    }
+
+
+
+    .client_review_heading {
+        font-size: 35px;
+    }
+
+    .client_review_byline {
+        font-size: 14px;
+        padding: 10px 0 0 0;
+    }
+
+
+    .client_review_para {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .three_person_container {
+        flex-direction: column;
+    }
+
+    .watch_learn_grow_text {
+        width: 100%;
+        text-align: center;
+        margin: 0 0 20px 0;
+    }
+
+    .three_persona_image_wrapper {
+        width: 100%
+    }
+
+    .three_persona_image_Container {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 800px) {
+
+    .hero_section_heading {
+        font-size: 35px;
+    }
+
+    .hero_section_para {
+        font-size: 14px;
+    }
+
+    .hero_section_para {
+        width: 300px;
+    }
+
+    .hero_section_button {
+        font-size: 13px;
+    }
+
+    .clients_review_grid_container {
+        grid-template-columns: auto auto;
+
+        padding: 40px 20px;
+        grid-gap: 20px;
+    }
+
+    .client_box_image video {
+        height: 250px;
+    }
+
+    .client_review_box_heading {
+        padding: 15px 15px 0px 15px;
+    }
+
+}
+
+@media screen and (max-width: 750px) {
+
+    .good_hands_grid_container {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    .about_coach_section {
+        flex-direction: column;
+    }
+
+    .coach_image {
+        width: 100%;
+        height: 320px;
+        background-size: cover;
+    }
+
+    .coach_detail {
+        width: 100%;
+        padding: 0;
+    }
+
+    .coach_detail_heading {
+        display: none;
+    }
+
+    .mobile_coach_detail_heading {
+        display: block;
+    }
+
+    .coach_points_heading_text {
+        font-size: 20px;
+    }
+
+    .coach_points_byline {
+        font-size: 14px;
+    }
+
+    .latest_wins_grid_container {
+        display: block;
+    }
+
+    .social_media_post_carousal {
+        display: none;
+    }
+
+    .latest_wins_heading {
+        font-size: 35px;
+        margin: 0 0 10px 0;
+    }
+
+
+    .latest_wins_para {
+        line-height: normal;
+        text-align: center;
+    }
+
+    .enterpreneur_exec_iamge {
+        display: none;
+    }
+
+    ._mobileenterpreneur_exec_iamge {
+        display: block;
+    }
+
+    .entrepreneur_heading {
+        font-size: 35px;
+    }
+
+    .entrepreneur_byline {
+        font-size: 14px;
+    }
+
+    .three_persona_image_Container {
+        display: none;
+    }
+
+    .mobile_three_person_image {
+        display: block;
+    }
+
+    .text_heading {
+        font-size: 35px;
+    }
+
+    .text_para p {
+        margin: 10px 0;
+
+        font-size: 14px;
+    }
+
+    .watch_learn_grow_text {
+        margin: 0 0 -10px 0;
+    }
+}
+
+@media screen and (max-width: 650px) {
+
+    .hero_section_container {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .hero_section_left_text {
+        width: 100%;
+        padding: 0 20px 30px 20px;
+    }
+
+    .hero_section_right_image_galary {
+        display: none;
+    }
+
+    .hero_section_right_image_galary_horr {
+        display: block;
+    }
+
+    .hero_section_heading {
+        text-align: center;
+    }
+
+    .hero_section_wrapper {
+        padding: 90px 0 0 0;
+    }
+
+    .hero_section_para {
+        width: 100%;
+        margin: 15px 0 20px 0;
+        text-align: center;
+    }
+
+    .hero_section_button {
+        margin: 15px auto 0 auto;
+    }
+
+
+}
+
+@media screen and (max-width: 550px) {
+
+    .good_hands_grid_container {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .compnay_logo_box img {
+        width: 80%;
+    }
+
+    .good_hands_grid_container {
+        grid-gap: 10px;
+    }
+
+    .clients_review_grid_container {
+        display: none;
+    }
+
+    .mobile_review_container {
+        display: block;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+    .good_hands_heading {
+        font-size: 35px;
+    }
+
+    .good_hands_Byline {
+        font-size: 14px;
+    }
+
+}

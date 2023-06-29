@@ -1,0 +1,34 @@
+.contact_us_banner {
+    width: 1600px;
+    max-width: 100%;
+    margin: 70px auto 0 auto;
+    height: calc(100vh - 200px);
+    max-height: 700px;
+    overflow: hidden;
+}
+
+.contact_us_banner img {
+    width: 1600px;
+    max-width: 100%;
+    height: calc(100vh - 70px);
+    max-height: 700px;
+}
+
+
+.contact_us_content {
+    width: 1240px;
+    max-width: 100%;
+    padding: 50px 20px;
+    margin: 0 auto;
+}
+
+
+.contact_us_content p {
+    font-size: 20px;
+    margin: 15px 0;
+    max-width: 100%;
+
+    text-align: left;
+
+    color: #222222;
+}

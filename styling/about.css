@@ -1,0 +1,90 @@
+.about_us_banner {
+    width: 1600px;
+    max-width: 100%;
+    margin: 70px auto 0 auto;
+    height: calc(100vh - 70px);
+    max-height: 900px;
+}
+
+.about_us_banner img {
+    width: 1600px;
+    max-width: 100%;
+    height: calc(100vh - 70px);
+    max-height: 900px;
+}
+
+
+
+.about_us_content {
+    width: 1240px;
+    max-width: 100%;
+    padding: 50px 20px;
+    margin: 0 auto;
+}
+
+
+
+.about_heading {
+    font-family: bebas;
+    font-size: 45px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin: 0 0 20px 0;
+    color: rgba(0, 0, 0, 0.87);
+}
+
+
+.about_us_para p {
+    font-size: 16px;
+    margin: 15px 0;
+    max-width: 100%;
+
+    text-align: left;
+
+    color: #222222;
+}
+
+.about_us_para p a {
+    font-size: 16px;
+    color: hsl(209, 100%, 62%);
+    text-decoration: none;
+}
+
+.about_us_para p a:hover {
+    font-weight: 600;
+}
+
+.about_us_cta {
+    width: 100%;
+    background-color: #E42652;
+    margin: 50px 0 0 0;
+    padding: 50px;
+    border-radius: 5px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about_us_cta span {
+    font-size: 20px;
+    max-width: 100%;
+    padding: 0 20px 0 0;
+    text-align: left;
+
+    color: white;
+}
+
+.about_us_cta a {
+    background-color: white;
+    border: 0;
+    margin: 0 0 0 20px;
+    padding: 7px 40px;
+    border-radius: 4px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 600;
+    color: #E32652;
+    text-decoration: none;
+}

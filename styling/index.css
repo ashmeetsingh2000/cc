@@ -1,0 +1,356 @@
+@font-face {
+    font-family: nunitoSan;
+    src: url(./NunitoSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: bebas;
+    src: url(./BebasNeue-Regular.ttf);
+}
+
+:root {
+    --noraml_text: 16px;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb:hover {
+    background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb {
+    background: #555;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span {
+    margin: 0;
+    padding: 0;
+}
+
+*,
+body {
+    margin: 0;
+    padding: 0;
+
+    font-family: nunitoSan;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+main {
+    width: 1600px;
+    max-width: 100%;
+
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+
+
+
+
+
+
+
+
+
+.navigation_bar_container {
+    width: 100%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    z-index: 10;
+    padding: 0px 20px;
+    background-color: white;
+}
+
+.navigation_bar {
+    width: 1200px;
+    max-width: 100%;
+    height: 70px;
+
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.nav_left {
+    display: flex;
+    align-items: center;
+}
+
+.company_image {
+    display: flex;
+    align-items: center;
+}
+
+.company_image img {
+    width: 100%;
+}
+
+.course_drop_down {
+    width: 150px;
+    height: 35px;
+    margin: 0px 30px;
+    border: 1px solid #E32652;
+    display: flex;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    text-decoration: none;
+    font-size: var(--noraml_text);
+    font-weight: 600;
+    transition: .3s all ease-in-out;
+}
+
+.course_drop_down:hover {
+    transition: .3s all ease-in-out;
+    background-color: #E32652;
+    color: white;
+}
+
+
+.navigation_links {
+    width: 250px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navigation_links a {
+    color: black;
+    text-decoration: none;
+    font-size: var(--noraml_text);
+    font-weight: 600;
+    transition: .2s all ease-in-out;
+}
+
+.navigation_links a:hover {
+    transition: .2s all ease-in-out;
+    color: #E32652;
+}
+
+
+
+
+
+.hamburger {
+    width: max-content;
+    position: relative;
+
+    display: none;
+}
+
+.hamburger_icon {
+    width: max-content;
+}
+
+.hamburger_icon img {
+    width: 25px;
+}
+
+.hamburger_sidebar {
+    width: 80%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 22px 30px;
+    transform: translateX(100%);
+
+    transition: .3s all ease-in-out;
+    background-color: white;
+}
+
+.hamburger_open {
+    transition: .3s all ease-in-out;
+    transform: translateX(0) !important;
+}
+
+.cross_icon {
+    width: 100%;
+    text-align: right;
+}
+
+.cross_icon img {
+    width: 25px;
+}
+
+.course_hamburger_down {
+    width: 160px;
+    height: 40px;
+    margin: 20px 0 0 0;
+    border: 1px solid #E32652;
+    display: flex;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    transition: .3s all ease-in-out;
+}
+
+.page_links {
+    width: max-content;
+    display: flex;
+    flex-direction: column;
+    padding: 15px 0;
+}
+
+.page_links a {
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    transition: .2s all ease-in-out;
+    padding: 10px 0;
+}
+
+
+.navigation_links a:hover {
+    transition: .2s all ease-in-out;
+    color: #E32652;
+}
+
+
+
+
+
+
+
+
+
+footer {
+    width: 100%;
+    background-color: #111010;
+}
+
+.Footer_company_image {
+    width: 100%;
+    padding: 50px 30px;
+    text-align: center;
+}
+
+.Footer_company_image img {
+    width: max-content;
+}
+
+.social_media_links {
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 50px 20px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social_media_links a {
+    text-decoration: none;
+}
+
+.social_media_box {
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: 0.02em;
+
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.copy_right_text {
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 10px 20px;
+    color: rgb(255, 255, 255, 0.4);
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 700px) {
+    .Footer_company_image {
+        padding: 50px 20px 0px 20px;
+    }
+
+    .course_drop_down {
+        display: none;
+    }
+
+    .nav_right {
+        display: none;
+    }
+
+
+    .hamburger {
+        display: block;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    .social_media_links {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        row-gap: 30px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .Footer_company_image img {
+        width: 70%;
+    }
+
+    .social_media_icon svg {
+        width: 30px !important;
+    }
+
+    #facebook_svg {
+        width: 16px !important;
+    }
+
+    .social_media_text {
+        font-size: 15px !important;
+    }
+
+}
