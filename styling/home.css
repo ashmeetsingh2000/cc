@@ -819,7 +819,7 @@
 .client_review_box {
     width: 100%;
     background-color: white;
-    border-radius: 5px;
+    border-radius: 10px;
     position: relative;
 }
 
@@ -862,8 +862,8 @@
     width: 100%;
     height: 300px;
 
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 .client_box_image img {
@@ -959,7 +959,7 @@
     width: 20%;
     margin: 0px 20px;
     overflow: hidden;
-    border-radius: 5px;
+    border-radius: 10px;
     cursor: pointer;
     position: relative;
     overflow: hidden;
