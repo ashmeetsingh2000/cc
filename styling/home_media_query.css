@@ -283,6 +283,14 @@
         line-height: 16px;
     }
 
+    .testimonials_box_wrapper {
+        display: none;
+    }
+
+    .mobile_testimonials_box_wrapper {
+        display: flex;
+    }
+
 }
 
 @media screen and (max-width: 650px) {
