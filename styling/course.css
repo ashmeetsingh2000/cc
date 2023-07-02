@@ -1,5 +1,6 @@
 .Ultimate_Guide_contaienr {
-    width: 1200px;
+    width: 1240px;
+    padding: 0px 20px;
     max-width: 100%;
     margin: 120px auto 60px auto;
 
@@ -10,11 +11,24 @@
 
 .Ultimate_Guide_image {
     width: 48%;
-    object-fit: contain;
+    height: calc(100vh - 400px);
+    max-height: 500px;
+    min-height: 400px;
+    border-radius: 10px;
+    overflow: hidden;
+
+    background-image: url('https://i.postimg.cc/y6PTzYmq/Section-first.png');
+    background-position: center top;
+    background-repeat: no-repeat;
+}
+
+#Ultimate_Guide_image {
+    display: none;
 }
 
 .Ultimate_Guide_image img {
-    width: 100%;
+    width: 80%;
+    margin: 0 auto;
 }
 
 
@@ -119,10 +133,10 @@
 
 
 .eight_points_grid {
-    width: 1200px;
+    width: 1240px;
     max-width: 100%;
     margin: 0 auto;
-    padding: 60px 0;
+    padding: 60px 20px;
     display: grid;
     grid-template-columns: auto auto auto auto;
     row-gap: 50px;
@@ -163,14 +177,15 @@
 
 .disclaimer_container {
 
-    width: 1200px;
+    width: 1240px;
     max-width: 100%;
-    padding: 60px 0;
+    padding: 60px 20px;
     margin: 0px auto;
 
     display: flex;
     justify-content: space-between;
     align-items: center;
+
 }
 
 .disclaimer_image {
@@ -242,9 +257,9 @@
 
 
 .structured_cariculum_wrapper {
-    width: 1000px;
+    width: 1240px;
     max-width: 100%;
-    padding: 60px 0;
+    padding: 60px 20px;
     margin: 0px auto;
 }
 
@@ -253,135 +268,140 @@
     font-family: bebas;
     font-size: 45px;
     text-align: center;
+    margin: 0 0 30px 0;
     letter-spacing: 2px;
     color: rgba(0, 0, 0, 0.87);
 }
 
-.structured_cariculum_cotnainer {
+.cariculam_grid {
     width: 100%;
-    margin: 320px 0 250px 0;
 }
 
-.structured_line {
-    width: 100%;
-    height: 2px;
-    background-color: rgb(222, 221, 221);
+.mobilecariculam_grid {
+    display: none;
+
+    text-align: center;
 }
 
-.structured_dots {
+.cariculam_box_grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    column-gap: 35px;
+}
+
+.cariculum_box {
+    width: 100%;
+}
+
+.cariculum_box_image {
+    width: 100%;
+    height: 130px;
+}
+
+
+.cariculum_box_detail {
+    width: 100%;
+    height: 60px;
+    background-color: white;
+    margin: -6px 0 0 0;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    align-items: center;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 0px 10px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.mobile_cariculum_box_detail {
+    width: 215px;
+    margin: -5px auto;
+    background-color: white;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 10px;
+}
+
+.special_border_styling {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 0px !important;
+    border-bottom-right-radius: 0px !important;
+}
+
+.upper_image_border {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.down_image_border {
+
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.cariculam_dot_grid {
     width: 100%;
+    margin: 40px 0;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    column-gap: 35px;
 
     position: relative;
-    top: -20px;
 }
 
-.dot_Styling {
+
+.dot_line_container {
+    width: 100%;
+    position: absolute;
+    top: 20px;
+    left: 0;
+
+    display: flex;
+    justify-content: center;
+}
+
+.dot_line {
+    width: 80%;
+    height: 2px;
+    background-color: rgb(222, 221, 221);
+    z-index: 5;
+}
+
+.dot_box_container {
+    width: 100%;
+    text-align: center;
+}
+
+.dot_box {
     width: 40px;
+    margin: 0 auto;
     height: 40px;
     border-radius: 50%;
-
+    z-index: 6;
     position: relative;
 }
 
 .dot_1 {
-    background-color: #FED3DD;
+    background-color: #FED3DD !important;
 }
 
 .dot_2 {
-    background-color: #FFACBF;
+    background-color: #FFACBF !important;
 }
 
 .dot_3 {
-    background-color: #FD90AA;
+    background-color: #FD90AA !important;
 }
 
 .dot_4 {
-    background-color: #F35278;
+    background-color: #F35278 !important;
 }
 
 .dot_5 {
-    background-color: #E32652;
-}
-
-
-.upper_box_styling {
-    position: absolute;
-    bottom: 40px;
-    left: 0;
-}
-
-
-
-.down_box_styling {
-    position: absolute;
-    top: 70px;
-    left: 0;
-}
-
-.dot_content_box {
-    width: 210px;
-    height: 250px;
-    overflow: hidden;
-    transform: translateX(-85px);
-    cursor: pointer;
-}
-
-
-
-.dot_detail_box {
-    width: 100%;
-    background: #FFFFFF;
-    border: 1px solid rgba(0, 0, 0, 0.08);
-    border-radius: 5px;
-}
-
-.dot_detail_image {
-    width: 100%;
-    overflow: hidden;
-    transition: .3s all ease-in-out;
-}
-
-.dot_content_box:hover .dot_detail_image {
-    transition: .3s all ease-in-out;
-    transform: scale(1.03);
-}
-
-.dot_detail_image img {
-    width: 100%;
-}
-
-.dot_detail_byline {
-    width: 100%;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
-    padding: 0px 15px;
-    height: 80px;
-
-    font-size: 14px;
-    font-weight: 600;
-    text-align: left !important;
-    color: #222222;
-}
-
-.spicial_dot_detail_byline {
-    margin: -5px 0 0 0;
-    height: 65px !important;
-}
-
-.dot_detail_byline span {
-    display: block;
-    width: 100%;
-    text-align: left !important;
-    font-weight: 600 !important;
-    font-size: 14px !important;
-    padding: 0 0 2px 0;
-    color: #222222 !important;
+    background-color: #E32652 !important;
 }
 
 
@@ -396,11 +416,11 @@
 
 
 .skills_grid_container {
-    width: 1200px;
+    width: 1240px;
     max-width: 100%;
 
     margin: 0px auto;
-    padding: 60px 0;
+    padding: 60px 20px;
 }
 
 .skills_grid_heading {
@@ -461,11 +481,11 @@
 
 
 .course_curriculum {
-    width: 1200px;
+    width: 1240px;
     max-width: 100%;
 
     margin: 0px auto;
-    padding: 40px 0 60px 0;
+    padding: 40px 20px 60px 20px;
 }
 
 .course_curriculum_heading {
@@ -492,7 +512,7 @@
 }
 
 .course_curriculum_image img {
-    width: 100px;
+    width: max-content;
 }
 
 .course_curriculum_container {
@@ -689,12 +709,11 @@
 
 
 .certificate__wrapper {
-    width: 1200px;
+    width: 1240px;
+    padding: 60px 20px;
     max-width: 100%;
 
     margin: 0 auto;
-
-    padding: 60px 0;
 }
 
 .certificate_details_heading {
@@ -764,6 +783,22 @@
 }
 
 
+.certificate_list {
+    width: 100%;
+}
+
+.certificate_list p {
+    display: flex;
+    margin: 0 0 10px 0;
+    font-size: 16px;
+    color: #222222;
+}
+
+.certificate_list svg {
+    width: 20px !important;
+    margin: 5px 10px 0 0;
+}
+
 
 
 
@@ -813,16 +848,17 @@
 
 
 .mobile_course_testimonial_list {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
     display: none;
 }
 
 
 
 .course_testi_box {
-    width: 340px;
-    max-width: 100%;
-    height: 300px;
-
+    height: 100%;
+    min-height: 300px;
     background-color: white;
     padding: 20px;
     margin: 0 10px;
@@ -878,6 +914,23 @@
     background-color: black;
 }
 
+.social_Two_dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: transparent;
+    border: 1px solid black;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 1s ease;
+}
+
+.active,
+.social_Two_dot:hover {
+    background-color: black;
+}
+
 
 .testimonial_dots_container {
     width: 100%;
@@ -920,9 +973,9 @@
 .three_grid {
     width: 100%;
 
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
 }
 
 
@@ -969,6 +1022,7 @@
 .readyto_get_started_button {
     width: 100%;
     text-align: center;
+    cursor: pointer;
 }
 
 .readyto_get_started_button a {
@@ -995,10 +1049,10 @@
 
 
 .faq_container {
-    width: 1200px;
+    width: 1240px;
     max-width: 100%;
     margin: 0 auto;
-    padding: 60px 0;
+    padding: 60px 20px;
 }
 
 .faq_heading {
@@ -1033,7 +1087,7 @@ ul.accordion-list li {
     border: 1px solid rgba(0, 0, 0, 0.08);
 }
 
-h3 {
+.faq_container h3 {
     font-weight: 700;
     position: relative;
     display: block;
@@ -1047,13 +1101,15 @@ h3 {
     color: #222222;
 }
 
-h3:after {
+.faq_container h3:after {
     content: "+";
     font-family: "material-design-iconic-font";
     position: absolute;
     right: 0;
-    top: 0;
+    top: -4px;
     color: rgba(36, 34, 34, 0.87);
+    padding: 0px 5px;
+    background-color: white;
     transition: all 0.3s ease-in-out;
     font-size: 25px;
 }

@@ -152,7 +152,7 @@ function continue_auto_carousal() {
 
 
 var three_persona_image_Container = document.getElementById('three_persona_image_Container');
-var last_active = document.getElementById('person_box_topic');
+// var last_active = document.getElementById('person_box_topic');
 
 var last_heading_active = document.getElementById('person_box_name');
 
@@ -169,10 +169,10 @@ function open_image_close(field) {
     last_heading_active = heading_line;
 
 
-    let topic_line = field.children[1].children[0].children[1];
-    last_active.style.display = 'none';
-    topic_line.style.display = 'block';
-    last_active = topic_line;
+    // let topic_line = field.children[1].children[0].children[1];
+    // last_active.style.display = 'none';
+    // topic_line.style.display = 'block';
+    // last_active = topic_line;
 
 }
 

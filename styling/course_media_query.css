@@ -1,0 +1,420 @@
+@media screen and (max-width: 1000px) {
+    .activity_inner_grid {
+        padding: 30px;
+    }
+}
+
+
+@media screen and (max-width: 800px) {
+
+    .eight_points_grid {
+        grid-template-columns: auto auto auto;
+        row-gap: 30px;
+        column-gap: 20px;
+        padding: 30px 20px;
+    }
+
+    .Ultimate_Guide_contaienr {
+        flex-direction: column;
+    }
+
+    #Ultimate_Guide_image {
+        display: block;
+    }
+
+    .Ultimate_Guide_image {
+        width: 100%;
+        height: max-content;
+        max-height: max-content;
+        background-image: none;
+    }
+
+
+    .Ultimate_Guide_Details {
+        margin: 30px 0 0 0;
+        width: 100%;
+    }
+
+
+
+
+    .disclaimer_container {
+        flex-direction: column;
+    }
+
+    .disclaimer_image {
+        width: 100%;
+    }
+
+    .disclaimer_image img {
+        width: 200px;
+        border-radius: 5px;
+    }
+
+    .disclaimer_content {
+        width: 100%;
+        padding: 20px 0 0 0;
+        text-align: center;
+    }
+
+    .disclaimer_content_para {
+        padding: 20px 0;
+    }
+
+    .disclaimer_content_button span {
+        margin: 0 0 20px 0;
+    }
+
+    .disclaimer_content_button a {
+        border-radius: 5px;
+        margin: 0 auto;
+
+    }
+
+
+
+    .skills_grid_container {
+        padding: 20px;
+    }
+
+    .skils_grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .skills_grid_heading {
+        font-size: 35px;
+    }
+
+    .skills_grid_byline {
+        padding: 10px 0 30px 0;
+        font-size: 14px;
+    }
+
+    .skills_heading {
+        font-size: 16px;
+        margin: 0 0 10px 0;
+    }
+
+    .skills_list p {
+        font-size: 12px;
+    }
+
+    .skills_list svg {
+        width: 15px !important;
+    }
+
+
+
+
+
+
+
+    .certificate__wrapper {
+        padding: 20px;
+    }
+
+
+    .certificate_container {
+        flex-direction: column;
+    }
+
+    .certificate_image_container {
+        width: 100%;
+        padding: 30px 0 0 0;
+    }
+
+
+    .certificate_details {
+        width: 100%;
+    }
+
+    .certificate_button {
+        display: flex;
+        justify-content: center;
+    }
+
+
+
+
+    .course_testimonial_wrapper {
+        width: 1240px;
+        margin: 0 auto;
+        padding: 20px 20px 60px 20px;
+        max-width: 100%;
+        text-align: center;
+    }
+
+    #course_testimonial_list {
+        display: none;
+    }
+
+    .mobile_course_testimonial_list {
+        display: flex;
+    }
+
+
+
+
+
+
+
+    .activity_inner_grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .activity_list {
+        display: none;
+    }
+
+
+
+
+
+
+    .structured_cariculum_wrapper {
+        padding: 20px 20px 60px 20px;
+    }
+
+    .cariculam_box_grid {
+        column-gap: 5px;
+    }
+
+    .cariculam_dot_grid {
+        column-gap: 5px;
+    }
+
+}
+
+@media screen and (max-width: 650px) {
+
+    .structured_cariculum_heading {
+        font-size: 35px;
+    }
+
+    .cariculam_grid {
+        display: none;
+    }
+
+    .mobilecariculam_grid {
+        display: block;
+    }
+
+    /* .cariculam_box_grid {
+        display: block;
+    }
+
+
+    .cariculam_dot_grid {
+        display: block;
+        margin: 0;
+    }
+
+    .dot_line_container {
+        top: 70px;
+    }
+
+    .dot_line {
+        width: 2px;
+        height: 790px;
+        background-color: rgb(222, 221, 221);
+        z-index: 5;
+    }
+
+    .cariculum_box_empty {
+        height: 190px;
+    }
+
+    .dot_1 {
+        margin: 70px auto;
+    }
+
+    .dot_2 {
+        margin: 160px auto 130px auto;
+    }
+
+
+    .dot_4 {
+        margin: 170px auto 130px auto;
+    } */
+
+
+}
+
+@media screen and (max-width: 600px) {
+
+    .Ultimate_Guide_contaienr {
+        margin: 90px auto 30px auto;
+    }
+
+    .Ultimate_Guide_heading {
+        font-size: 35px;
+        margin: -10px 0 10px 0;
+    }
+
+    .Ultimate_Guide_byline {
+        font-size: 14px;
+    }
+
+    .clent_name {
+        padding: 5px 0 15px 0;
+    }
+
+    .the_name {
+        padding: 15px 0 0 0;
+        font-size: 20px;
+    }
+
+    .Ready_text {
+        font-size: 16px;
+    }
+
+
+
+    .Ultimate_Guide_buttons a {
+        padding: 10px 40px;
+        font-size: 16px;
+    }
+
+    .enroll_button {
+        border-radius: 5px;
+    }
+
+    .sneak_button {
+        border-radius: 5px;
+    }
+
+
+    .eight_points_grid {
+        grid-template-columns: auto auto;
+        column-gap: 10px;
+        row-gap: 10px;
+    }
+
+    .poit_box_heading {
+        font-size: 16px;
+    }
+
+    .poit_box_byline {
+        font-size: 13px;
+        color: #222222;
+    }
+
+
+    .disclaimer_content_heading {
+        font-size: 35px;
+    }
+
+    .disclaimer_content_para {
+        font-size: 14px;
+    }
+
+
+
+    .certificate_details_heading {
+        font-size: 35px;
+    }
+
+
+
+
+
+
+    .ready_to_Get_started_wrapper {
+        padding: 40px 20px;
+        margin: 60px 0;
+    }
+
+    .readyto_get_started_heading {
+        font-size: 30px;
+    }
+
+    .readyto_get_started_byline {
+        font-size: 16px !important;
+        padding: 20px 0 25px 0;
+    }
+
+
+
+
+
+
+    .faq_container {
+        padding: 30px 20px 40px 20px;
+    }
+
+    .faq_heading {
+        font-size: 35px;
+        margin: 0 0 20px 0;
+    }
+
+    .answer p {
+        font-size: 14px;
+    }
+
+
+    .faq_container h3 {
+        font-size: 14px;
+    }
+
+
+
+    .course_testimonial_heading {
+        font-size: 35px;
+        margin: 0 0 20px 0;
+    }
+
+    .course_curriculum_heading {
+        font-size: 35px;
+    }
+
+    .course_curriculum_byline {
+        font-size: 14px;
+    }
+
+
+    .activity_heading {
+
+        font-size: 16px;
+
+    }
+
+
+    .activity_trigger {
+        padding: 0px 0px 0px 20px;
+    }
+
+    .activity_trigger_text_heading {
+        font-size: 14px;
+    }
+
+    .activity_trigger_text_para {
+        font-size: 14px;
+    }
+
+    .activity_grid_box_detail {
+        height: auto;
+    }
+
+    .activity_trigger_text {
+        padding: 25px 0 20px 30px;
+    }
+
+    .course_testi_box {
+        font-size: 14px;
+        padding: 15px;
+    }
+
+}
+
+
+@media screen and (max-width: 500px) {
+
+    .Ultimate_Guide_image img {
+        width: 100%;
+    }
+
+
+    .activity_inner_grid {
+        grid-template-columns: 1fr;
+    }
+}

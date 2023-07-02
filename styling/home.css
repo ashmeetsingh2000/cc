@@ -414,7 +414,7 @@
 .mobile_social_Slides img {
     width: 400px;
     max-width: 100%;
-    min-height: 200px;
+    min-height: 150px;
 }
 
 .social_dot {
@@ -519,14 +519,14 @@
     padding: 50px 20px 0 20px;
     display: grid;
     grid-gap: 20px;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
 
 .compnay_logo_box {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px 0;
+    padding: 10px 0;
     background: #FFFFFF;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.12);
     border-radius: 10px;
@@ -877,6 +877,9 @@
     font-size: 16px;
     padding: 15px;
     font-weight: 600;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: white;
 }
 
 .client_review_box_client_Name {

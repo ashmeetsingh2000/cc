@@ -283,7 +283,7 @@
         line-height: 16px;
     }
 
-    .testimonials_box_wrapper {
+    #latest_review_desktop {
         display: none;
     }
 
@@ -337,7 +337,7 @@
 @media screen and (max-width: 550px) {
 
     .good_hands_grid_container {
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 
     .compnay_logo_box img {

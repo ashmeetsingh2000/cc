@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styling/index.css">
     <link rel="stylesheet" href="./styling/course.css">
+    <link rel="stylesheet" href="./styling/course_media_query.css">
     <title>cc - course</title>
 </head>
 
@@ -58,7 +59,8 @@
         <div class="Ultimate_Guide_contaienr">
 
             <div class="Ultimate_Guide_image">
-                <img src="https://i.postimg.cc/y6PTzYmq/Section-first.png" alt="" />
+                <img id="Ultimate_Guide_image" src="https://i.postimg.cc/y6PTzYmq/Section-first.png"
+                    alt="first Section Image">
             </div>
 
             <div class="Ultimate_Guide_Details">
@@ -220,101 +222,140 @@
 
             <div class="structured_cariculum_heading">Structured curriculum. Everything in one place</div>
 
-            <div class="structured_cariculum_cotnainer">
+            <div class="cariculam_grid">
 
-                <div class="structured_line">
+                <div class="cariculam_box_grid">
 
-                    <div class="structured_dots">
-
-                        <div class="dot_Styling dot_1">
-
-                            <div class="dot_content_box upper_box_styling">
-                                <div class="dot_detail_box">
-
-                                    <div class="dot_detail_image">
-                                        <img src="https://i.postimg.cc/tTDS2CC1/Course-Section-fourth.png" alt="" />
-                                    </div>
-
-                                    <div class="dot_detail_byline spicial_dot_detail_byline">
-                                        <!-- <span>Section 1</span> -->
-                                        Introduction
-                                    </div>
-
-                                </div>
-                            </div>
-
+                    <div class="cariculum_box">
+                        <div class="cariculum_box_image">
+                            <img src="https://i.postimg.cc/tTDS2CC1/Course-Section-fourth.png"
+                                class="upper_image_border" alt="Default Course iamge">
                         </div>
-
-                        <div class="dot_Styling dot_2">
-                            <div class="dot_content_box down_box_styling">
-                                <div class="dot_detail_box">
-
-                                    <div class="dot_detail_byline">
-                                        <!-- <span>Section 2</span> -->
-                                        Your Skin Type, and Skin Condition
-                                    </div>
-
-                                    <div class="dot_detail_image">
-                                        <img src="https://i.postimg.cc/tTDS2CC1/Course-Section-fourth.png" alt="" />
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="dot_Styling dot_3">
-                            <div class="dot_content_box upper_box_styling">
-                                <div class="dot_detail_box">
-
-                                    <div class="dot_detail_image">
-                                        <img src="https://i.postimg.cc/tTDS2CC1/Course-Section-fourth.png" alt="" />
-                                    </div>
-
-                                    <div class="dot_detail_byline spicial_dot_detail_byline">
-                                        <!-- <span>Section 3</span> -->
-                                        Decoding Skincare Ingredients
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="dot_Styling dot_4">
-                            <div class="dot_content_box down_box_styling">
-                                <div class="dot_detail_box">
-
-                                    <div class="dot_detail_byline">
-                                        <!-- <span>Section 4</span> -->
-                                        Skincare Routines for Normal, Oily, Dry, and Combination skin
-                                    </div>
-
-                                    <div class="dot_detail_image">
-                                        <img src="https://i.postimg.cc/tTDS2CC1/Course-Section-fourth.png" alt="" />
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="dot_Styling dot_5">
-                            <div class="dot_content_box upper_box_styling">
-                                <div class="dot_detail_box">
-
-                                    <div class="dot_detail_image">
-                                        <img src="https://i.postimg.cc/tTDS2CC1/Course-Section-fourth.png" alt="" />
-                                    </div>
-
-                                    <div class="dot_detail_byline spicial_dot_detail_byline">
-                                        <!-- <span>Section 5</span> -->
-                                        Advanced techniques for peak performance
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-
+                        <div class="cariculum_box_detail">Introduction</div>
                     </div>
 
+                    <div class="cariculum_box_empty"></div>
+
+                    <div class="cariculum_box">
+                        <div class="cariculum_box_image">
+                            <img src="https://i.postimg.cc/tTDS2CC1/Course-Section-fourth.png"
+                                class="upper_image_border" alt="Default Course iamge">
+                        </div>
+                        <div class="cariculum_box_detail">Decoding Skincare Ingredients</div>
+                    </div>
+
+                    <div class="cariculum_box_empty"></div>
+
+                    <div class="cariculum_box">
+                        <div class="cariculum_box_image">
+                            <img src="https://i.postimg.cc/tTDS2CC1/Course-Section-fourth.png"
+                                class="upper_image_border" alt="Default Course iamge">
+                        </div>
+                        <div class="cariculum_box_detail">Advanced techniques for peak performance</div>
+                    </div>
+
+                </div>
+
+                <div class="cariculam_dot_grid">
+
+                    <div class="dot_box_container">
+                        <div class="dot_box dot_1"></div>
+                    </div>
+                    <div class="dot_box_container">
+                        <div class="dot_box dot_2"></div>
+                    </div>
+                    <div class="dot_box_container">
+                        <div class="dot_box dot_3"></div>
+                    </div>
+                    <div class="dot_box_container">
+                        <div class="dot_box dot_4"></div>
+                    </div>
+                    <div class="dot_box_container">
+                        <div class="dot_box dot_5"></div>
+                    </div>
+
+                    <div class="dot_line_container">
+                        <div class="dot_line"></div>
+                    </div>
+
+                </div>
+
+                <div class="cariculam_box_grid">
+
+                    <div class="cariculum_box_empty"></div>
+
+                    <div class="cariculum_box">
+                        <div class="cariculum_box_detail special_border_styling">Your Skin Type, and Skin Condition
+                        </div>
+                        <div class="cariculum_box_image">
+                            <img src="https://i.postimg.cc/tTDS2CC1/Course-Section-fourth.png" class="down_image_border"
+                                alt="Default Course iamge">
+                        </div>
+                    </div>
+
+                    <div class="cariculum_box_empty"></div>
+
+                    <div class="cariculum_box">
+                        <div class="cariculum_box_detail special_border_styling">
+                            Skincare Routines for Normal, Oily, Dry, and Combination skin
+                        </div>
+                        <div class="cariculum_box_image">
+                            <img src="https://i.postimg.cc/tTDS2CC1/Course-Section-fourth.png" class="down_image_border"
+                                alt="Default Course iamge">
+                        </div>
+                    </div>
+
+                    <div class="cariculum_box_empty"></div>
+
+                </div>
+
+            </div>
+
+            <div class="mobilecariculam_grid">
+
+                <div class="mobile_cariculum_box">
+                    <div class="mobile_cariculum_box_image">
+                        <img src="https://i.postimg.cc/tTDS2CC1/Course-Section-fourth.png" alt="Default Course iamge">
+                    </div>
+                    <div class="mobile_cariculum_box_detail">Introduction</div>
+                </div>
+
+                <br>
+
+                <div class="mobile_cariculum_box">
+                    <div class="mobile_cariculum_box_image">
+                        <img src="https://i.postimg.cc/tTDS2CC1/Course-Section-fourth.png" alt="Default Course iamge">
+                    </div>
+                    <div class="mobile_cariculum_box_detail">Your Skin Type, and Skin Condition</div>
+                </div>
+
+                <br>
+
+                <div class="mobile_cariculum_box">
+                    <div class="mobile_cariculum_box_image">
+                        <img src="https://i.postimg.cc/tTDS2CC1/Course-Section-fourth.png" alt="Default Course iamge">
+                    </div>
+                    <div class="mobile_cariculum_box_detail">Decoding Skincare Ingredients</div>
+                </div>
+
+                <br>
+
+                <div class="mobile_cariculum_box">
+                    <div class="mobile_cariculum_box_image">
+                        <img src="https://i.postimg.cc/tTDS2CC1/Course-Section-fourth.png" alt="Default Course iamge">
+                    </div>
+                    <div class="mobile_cariculum_box_detail">
+                        Skincare Routines for Normal, Oily, Dry, and Combination skin
+                    </div>
+                </div>
+
+                <br>
+
+                <div class="mobile_cariculum_box">
+                    <div class="mobile_cariculum_box_image">
+                        <img src="https://i.postimg.cc/tTDS2CC1/Course-Section-fourth.png" alt="Default Course iamge">
+                    </div>
+                    <div class="mobile_cariculum_box_detail">Advanced techniques for peak performance</div>
                 </div>
 
             </div>
@@ -1299,7 +1340,7 @@
 
             <div class="course_testimonial_heading">Hear from our Social Media Community</div>
 
-            <div class="course_testimonial_list">
+            <div class="course_testimonial_list" id="course_testimonial_list">
 
                 <div class="testimonial_Arrows" onclick="social_meida_plusSlides(-1)">
                     <svg width=" 8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1503,6 +1544,219 @@
 
             </div>
 
+
+
+            <div class="mobile_course_testimonial_list">
+
+                <div class="testimonial_Arrows" onclick="social_meida_plusSlides_two(-1)">
+                    <svg width=" 8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M7.51049 0.46967C7.82984 0.762564 7.82984 1.23744 7.51049 1.53033L2.125 6.46967C1.80565 6.76256 1.80565 7.23744 2.125 7.53033L7.51049 12.4697C7.82984 12.7626 7.82984 13.2374 7.51049 13.5303C7.19114 13.8232 6.67337 13.8232 6.35402 13.5303L0.968534 8.59099C0.0104885 7.71231 0.0104861 6.28769 0.968534 5.40901L6.35402 0.46967C6.67337 0.176777 7.19114 0.176777 7.51049 0.46967Z"
+                            fill="black" fill-opacity="0.6" />
+                    </svg>
+                </div>
+
+                <div class="testimonials_box_container" id="testimonials_box_container">
+
+                    <div class="slideshow-container">
+
+                        <div class="social_Two_Slides fade">
+
+                            <!-- Shikha -->
+                            <div class="course_testi_box">
+
+                                <div class="testi_box_para">
+                                    Been following Chetali for a while now, and I absolutely love her
+                                    recommendations -
+                                    unbiased, very well-researched, thorough, yet they are simple!
+                                </div>
+
+                                <div class="testi_box_Person_box">
+
+                                    <div class="testi_box_Person_name">
+                                        <img src="https://i.postimg.cc/wB6FSJQg/Shikha-pic.jpg" alt="Shikha" />
+                                        <span>
+                                            Shikha
+                                        </span>
+                                    </div>
+                                    <div class="testi_box_Person_designation">
+                                        Corporate Executive
+                                    </div>
+
+                                </div>
+
+                            </div>
+                            <!-- Shikha -->
+                        </div>
+
+                        <div class="social_Two_Slides fade">
+
+                            <!-- Gita -->
+                            <div class="course_testi_box">
+
+                                <div class="testi_box_para">
+                                    Big shoutout to Chetali for doing an incredible job in creating such honest
+                                    content!
+                                </div>
+
+                                <div class="testi_box_Person_box">
+
+                                    <div class="testi_box_Person_name">
+                                        <img src="https://i.postimg.cc/jS6ZgvNM/Gita-Final.jpg" alt="Shikha" />
+                                        <span>
+                                            Gita
+                                        </span>
+                                    </div>
+                                    <div class="testi_box_Person_designation">
+                                        School Teacher
+                                    </div>
+
+                                </div>
+
+                            </div>
+                            <!-- Gita -->
+                        </div>
+
+                        <div class="social_Two_Slides fade">
+
+                            <!-- Mehak -->
+                            <div class="course_testi_box">
+
+                                <div class="testi_box_para">
+                                    I have been following Chetali's YT channel for 3 years now, and whatever
+                                    recommendations I have followed have magically worked for me.
+                                </div>
+
+                                <div class="testi_box_Person_box">
+
+                                    <div class="testi_box_Person_name">
+                                        <img src="https://i.postimg.cc/pXF08Pdb/Mehak-Testimonial-Pic.jpg"
+                                            alt="Shikha" />
+                                        <span>
+                                            Mehak
+                                        </span>
+                                    </div>
+                                    <div class="testi_box_Person_designation">
+                                        Student
+                                    </div>
+
+                                </div>
+                            </div>
+                            <!-- Mehak -->
+
+                        </div>
+
+                        <div class="social_Two_Slides fade">
+
+                            <!-- Parul -->
+                            <div class="course_testi_box">
+
+                                <div class="testi_box_para">
+                                    Chetali's reviews are a boon for people like me who have zero knowledge on
+                                    skincare
+                                    and haircare. She connects instantaneously with her viewers and she is loved by
+                                    so
+                                    many like me.
+                                </div>
+
+                                <div class="testi_box_Person_box">
+
+                                    <div class="testi_box_Person_name">
+                                        <img src="https://i.postimg.cc/Y2VnhvMz/Parul-Final.jpg" alt="Shikha" />
+                                        <span>
+                                            Parul
+                                        </span>
+                                    </div>
+                                    <div class="testi_box_Person_designation">
+                                        Business Owner
+                                    </div>
+
+                                </div>
+
+                            </div>
+                            <!-- Parul -->
+                        </div>
+
+                        <div class="social_Two_Slides fade">
+
+                            <!-- Rashmi -->
+                            <div class="course_testi_box">
+                                <div class="testi_box_para">
+                                    I have been following Chetali's YT channel for 3 years now, and whatever
+                                    recommendations I have followed have magically worked for me.
+                                </div>
+
+                                <div class="testi_box_Person_box">
+
+                                    <div class="testi_box_Person_name">
+                                        <img src="https://i.postimg.cc/sgCT4bBB/Rashmi-Final.jpg" alt="Shikha" />
+                                        <span>
+                                            Rashmi
+                                        </span>
+                                    </div>
+                                    <div class="testi_box_Person_designation">
+                                        Corporate Executive
+                                    </div>
+
+                                </div>
+
+                            </div>
+                            <!-- Rashmi -->
+                        </div>
+
+                        <div class="social_Two_Slides fade">
+
+                            <!-- Shilu -->
+                            <div class="course_testi_box">
+                                <div class="testi_box_para">
+                                    Been watching your videos for a couple of years, and must admit that it has
+                                    completely changed my skincare game. Straight forward, easy to understand and
+                                    adopt!
+                                </div>
+
+                                <div class="testi_box_Person_box">
+
+                                    <div class="testi_box_Person_name">
+                                        <img src="https://i.postimg.cc/65LgmCk5/shilu.png" alt="Shikha" />
+                                        <span>
+                                            Shilu
+                                        </span>
+                                    </div>
+                                    <div class="testi_box_Person_designation">
+                                        Home Maker
+                                    </div>
+
+                                </div>
+                            </div>
+                            <!-- Shilu -->
+
+                        </div>
+
+                    </div>
+
+                    <br>
+
+                    <div class="testimonial_dots_container">
+                        <span class="social_Two_dot" onclick="social_currentSlide_two(1)"></span>
+                        <span class="social_Two_dot" onclick="social_currentSlide_two(2)"></span>
+                        <span class="social_Two_dot" onclick="social_currentSlide_two(3)"></span>
+                        <span class="social_Two_dot" onclick="social_currentSlide_two(4)"></span>
+                        <span class="social_Two_dot" onclick="social_currentSlide_two(5)"></span>
+                        <span class="social_Two_dot" onclick="social_currentSlide_two(6)"></span>
+                    </div>
+
+                </div>
+
+                <div class="testimonial_Arrows" id="testimonial_right_Arrows" onclick="social_meida_plusSlides_two(1)">
+                    <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M0.489512 13.5303C0.170163 13.2374 0.170163 12.7626 0.489512 12.4697L5.875 7.53033C6.19435 7.23744 6.19435 6.76256 5.875 6.46967L0.489513 1.53033C0.170164 1.23744 0.170164 0.762564 0.489513 0.46967C0.808862 0.176777 1.32663 0.176777 1.64598 0.46967L7.03147 5.40901C7.98951 6.28769 7.98951 7.71231 7.03147 8.59099L1.64598 13.5303C1.32663 13.8232 0.808861 13.8232 0.489512 13.5303Z"
+                            fill="black" fill-opacity="0.6" />
+                    </svg>
+                </div>
+
+            </div>
+
         </div>
         <!--================================== Testimonial Carosual ==================================-->
 
@@ -1522,7 +1776,7 @@
 
                 <div class="certificate_details">
 
-                    <div class="skills_list">
+                    <div class="certificate_list">
 
                         <p>
                             <span><svg width="18" height="14" viewBox="0 0 18 14" fill="none"
