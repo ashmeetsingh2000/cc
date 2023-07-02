@@ -48,11 +48,11 @@
 @media screen and (max-width: 500px) {
 
     .contact_us_banner {
-        height: calc(100vh - 400px);
+        height: calc(100vh - 450px);
     }
 
     .contact_us_banner img {
-        height: calc(100vh - 250px);
+        height: calc(100vh - 400px);
     }
 
     .contact_us_content {

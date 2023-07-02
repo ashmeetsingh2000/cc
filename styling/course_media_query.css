@@ -26,6 +26,7 @@
         width: 100%;
         height: max-content;
         max-height: max-content;
+        min-height: max-content;
         background-image: none;
     }
 
