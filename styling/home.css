@@ -48,7 +48,7 @@
 }
 
 .hero_section_button {
-    width: 150px;
+    width: 200px;
     height: 40px;
     margin: 30px 0 0 0;
     border: 1px solid #E32652;
@@ -63,11 +63,6 @@
     transition: .3s all ease-in-out;
 }
 
-.hero_section_button:hover {
-    transition: .3s all ease-in-out;
-    background-color: #E32652;
-    color: white;
-}
 
 
 .hero_section_right_image_galary {
@@ -547,7 +542,8 @@
 .testimonial_wrapper {
     width: 100%;
     padding: 60px 0 50px 0;
-    background-color: #F9F9F9;
+    background-color: #FFF4F7;
+
 }
 
 .testimonial_container {

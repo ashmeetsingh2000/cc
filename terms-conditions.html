@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styling/index.css">
-    <link rel="stylesheet" href="./styling/thanku.css">
-    <title>cc - ThankYou</title>
+    <link rel="stylesheet" href="./styling/other_styling.css">
+    <title>cc - Terms & Conditions</title>
 </head>
 
 <body>
@@ -77,32 +77,7 @@
 
         <!-- =============================== [ Navigation Bar ] ================================== -->
 
-        <div class="thanku_text">
-            thanku for your purchase
-        </div>
-
-        <div class="tankhu_detail">
-            <p>Hi there,</p>
-
-            <p>Thank you for purchasing my course - <b>“Ultimate Guide to your Personalised Skincare Routing".</b></p>
-
-            <p>I am thrilled to have you join my community of passionate learners eager to enhance their skincare
-                knowledge.</p>
-
-            <p><b>Please note these next steps:</b></p>
-            <ul>
-                <li>In the next few minutes, you will receive details on how to access the course on your Email ID.</li>
-
-                <li>The email will be from <b>admin@vmeventures.com</b></li>
-
-                <li>Make sure to check for the email in your Inbox, Promotions and Spam folder.</li>
-            </ul>
-            <p>Note: For any course purchase related queries or if you do not receive the above email, you can reach out
-                to us on <b>admin@vmeventures.com</b> and we will
-                respond shortly.</p>
-
-            <p>Thanks, and | look forward to seeing you in the course! :)</p>
-        </div>
+        <div class="page_heading">Terms & conditions</div>
 
         <!-- =================================== [ footer ] ====================================== -->
 
@@ -211,7 +186,22 @@
 
     </main>
 
-    <script src="./js/index.js"></script>
+
+    <script>
+        // Hamburger Workings
+        var hamburger_sidebar = document.getElementById('hamburger_sidebar')
+        function open_close_hamburger() {
+            if (hamburger_sidebar.classList.contains('hamburger_open')) {
+                hamburger_sidebar.classList.remove('hamburger_open')
+            }
+            else {
+                hamburger_sidebar.classList.add('hamburger_open')
+            }
+        }
+// Hamburger Workings
+
+
+    </script>
 
 </body>
 

@@ -1,0 +1,11 @@
+.page_heading {
+    width: 100%;
+
+    margin: 100px 0 0 0;
+    padding: 0px 20px;
+    font-family: bebas;
+    font-size: 60px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: rgba(0, 0, 0, 0.87);
+}
