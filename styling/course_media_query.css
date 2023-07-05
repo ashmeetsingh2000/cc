@@ -200,45 +200,6 @@
         display: block;
     }
 
-    /* .cariculam_box_grid {
-        display: block;
-    }
-
-
-    .cariculam_dot_grid {
-        display: block;
-        margin: 0;
-    }
-
-    .dot_line_container {
-        top: 70px;
-    }
-
-    .dot_line {
-        width: 2px;
-        height: 790px;
-        background-color: rgb(222, 221, 221);
-        z-index: 5;
-    }
-
-    .cariculum_box_empty {
-        height: 190px;
-    }
-
-    .dot_1 {
-        margin: 70px auto;
-    }
-
-    .dot_2 {
-        margin: 160px auto 130px auto;
-    }
-
-
-    .dot_4 {
-        margin: 170px auto 130px auto;
-    } */
-
-
 }
 
 @media screen and (max-width: 600px) {

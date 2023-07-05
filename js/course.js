@@ -27,13 +27,17 @@ function show_testi_Slides(n) {
 }
 
 
-var timeout;
+var carousalInterval = setInterval(doStuff, 6000);
+
 function doStuff() {
     social_meida_plusSlides(1)
-
-    timeout = setTimeout(doStuff, 5000);
 }
-doStuff()
+
+function user_click(n) {
+    clearInterval(carousalInterval);
+    social_meida_plusSlides(n)
+    carousalInterval = setInterval(doStuff, 6000);
+}
 
 
 
@@ -71,10 +75,15 @@ function show_testi_Slides_two(n) {
 }
 
 
-var timeout;
+
+var caroInterval = setInterval(doStuff_two, 6000);
+
 function doStuff_two() {
     social_meida_plusSlides_two(1)
-
-    timeout = setTimeout(doStuff_two, 5000);
 }
-doStuff_two()
+
+function user_course_click(n) {
+    clearInterval(caroInterval);
+    social_meida_plusSlides_two(n)
+    caroInterval = setInterval(doStuff_two, 6000);
+}

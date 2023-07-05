@@ -20,30 +20,12 @@ function open_close_hamburger() {
 
 
 // ====== [ Social Media Community] =============
-
-var comunity_post_arr = [
-    `<img src="https://i.postimg.cc/CxhYcntc/5.jpg" alt="Latest wins First Image" />`,
-    `<img src="https://i.postimg.cc/G28bk0Nr/6.jpg" alt="Latest wins First Image" />`,
-    `<img src="https://i.postimg.cc/tgmXZRB2/7.jpg" alt="Latest wins First Image" />`,
-    `<img src="https://i.postimg.cc/852N4KQv/8.jpg" alt="Latest wins First Image" />`,
-    `<img src="https://i.postimg.cc/C5bYQGSQ/9.jpg" alt="Latest wins First Image" />`,
-    `<img src="https://i.postimg.cc/1zzm3Vr8/10.jpg" alt="Latest wins First Image" />`,
-    `<img src="https://i.postimg.cc/1RF9XQwr/11.jpg" alt="Latest wins First Image" />`,
-    `<img src="https://i.postimg.cc/8z4kGmM8/1.jpg" alt="Latest wins First Image" />`,
-    `<img src="https://i.postimg.cc/pXtPn6Bb/2.jpg" alt="Latest wins First Image" />`,
-    `<img src="https://i.postimg.cc/m2NB3ydc/3.jpg" alt="Latest wins First Image" />`,
-    `<img src="https://i.postimg.cc/3xthVJQY/4.jpg" alt="Latest wins First Image" />`
-]
-
-
-
 let socialIndex = 1;
 show_social_Slides(socialIndex);
 
 function social_plusSlides(n) {
     show_social_Slides(socialIndex += n);
 }
-
 function social_currentSlide(n) {
     show_social_Slides(socialIndex = n);
 }
@@ -65,19 +47,16 @@ function show_social_Slides(n) {
 }
 
 
-var socialtimeout;
+var socialInterval = setInterval(do_social_Stuff, 6000);
+
 function do_social_Stuff() {
     social_plusSlides(1)
-
-    socialtimeout = setTimeout(do_social_Stuff, 5000);
 }
-do_social_Stuff()
 
-function social_stop_auto_carousal() {
-    clearInterval(socialtimeout);
-}
-function social_continue_auto_carousal() {
-    do_social_Stuff()
+function social_user_click(n) {
+    clearInterval(socialInterval);
+    social_plusSlides(n)
+    socialInterval = setInterval(do_social_Stuff, 6000);
 }
 
 // ====== [ Social Media Community] =============
@@ -90,7 +69,6 @@ function social_continue_auto_carousal() {
 
 
 // ====== [ Testimonial ] =============
-
 let slideIndex = 1;
 show_testi_Slides(slideIndex);
 
@@ -119,20 +97,23 @@ function show_testi_Slides(n) {
 }
 
 
-var timeout;
+
+
+
+var carousalInterval = setInterval(doStuff, 6000);
+
 function doStuff() {
     plusSlides(1)
+}
 
-    timeout = setTimeout(doStuff, 5000);
+function user_click(n) {
+    clearInterval(carousalInterval);
+    plusSlides(n)
+    carousalInterval = setInterval(doStuff, 6000);
 }
-doStuff()
 
-function stop_auto_carousal() {
-    clearInterval(timeout);
-}
-function continue_auto_carousal() {
-    doStuff()
-}
+function stop_auto_carousal() { }
+function continue_auto_carousal() { }
 
 // ====== [ Testimonial ] =============
 
@@ -142,17 +123,7 @@ function continue_auto_carousal() {
 
 
 //  three person workings
-
-
-
-
-
-
-
-
-
 var three_persona_image_Container = document.getElementById('three_persona_image_Container');
-// var last_active = document.getElementById('person_box_topic');
 
 var last_heading_active = document.getElementById('person_box_name');
 
@@ -167,12 +138,6 @@ function open_image_close(field) {
     last_heading_active.classList.add('name_rotate_ninty');
     heading_line.classList.remove('name_rotate_ninty');
     last_heading_active = heading_line;
-
-
-    // let topic_line = field.children[1].children[0].children[1];
-    // last_active.style.display = 'none';
-    // topic_line.style.display = 'block';
-    // last_active = topic_line;
 
 }
 
@@ -273,14 +238,21 @@ function show_mobile_social_Slides(n) {
 }
 
 
-var socialtimeout;
+// var socialtimeout;
 function do_mobile_social_Stuff() {
     mobile_social_plusSlides(1)
-
-    socialtimeout = setTimeout(do_mobile_social_Stuff, 5000);
 }
-do_mobile_social_Stuff()
 
+var mobile_socialInterval = setInterval(do_mobile_social_Stuff, 6000);
+
+function mobile_social_user_click(n) {
+
+    clearInterval(mobile_socialInterval);
+    mobile_social_plusSlides(n)
+
+    mobile_socialInterval = setInterval(do_mobile_social_Stuff, 6000);
+
+}
 
 
 
@@ -330,10 +302,18 @@ function show_mobile_review_Slides(n) {
 }
 
 
-var socialtimeout;
+var mobile_review_Interval = setInterval(do_mobile_review_Stuff, 6000);
+
 function do_mobile_review_Stuff() {
     mobile_review_plusSlides(1)
-
-    socialtimeout = setTimeout(do_mobile_review_Stuff, 5000);
 }
-do_mobile_review_Stuff()
+
+
+function mobile_review_user_click() {
+
+    clearInterval(mobile_review_Interval);
+    mobile_review_plusSlides(1)
+
+    mobile_review_Interval = setInterval(do_mobile_review_Stuff, 6000);
+
+}

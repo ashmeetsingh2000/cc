@@ -86,16 +86,16 @@
     border-radius: 5px;
 }
 
-.clent_name {
+
+.client_name_box {
     width: 100%;
-    display: flex;
-    justify-content: center;
     padding: 5px 0 20px 0;
-    flex-direction: column;
     text-align: center;
 }
 
-.dash {
+
+
+.design_line {
     width: 24px;
     margin: 0 auto;
     height: 4px;
@@ -103,7 +103,7 @@
     background: #E32652;
 }
 
-.the_name {
+.Clients_name {
     padding: 20px 0 0 0;
     font-weight: 700;
     font-size: 22px;
@@ -146,6 +146,19 @@
 .point_box {
     width: 100%;
     text-align: center;
+}
+
+.poit_box_image {
+    width: 64px;
+    height: 64px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.point_box img {
+    width: 64px;
 }
 
 .poit_box_heading {
@@ -508,19 +521,26 @@
 .course_curriculum_image {
     width: 100%;
     text-align: center;
-
 }
 
-.course_curriculum_image img {
+g .course_curriculum_image img {
     width: max-content;
 }
 
 .course_curriculum_container {
     width: 100%;
     margin: 30px 0 0 0;
+    padding: 0 0 10px 0;
     background: #FFFFFF;
     box-shadow: 0px 0px 36px rgba(0, 0, 0, 0.08);
+    border-radius: 20px;
+    overflow: hidden;
 }
+
+.course_accordion {
+    width: 100%;
+}
+
 
 .activities_list_container {
     width: 100%;
@@ -581,9 +601,6 @@
 
 
 
-.activity_accordion_list {
-    width: 100%;
-}
 
 .activity_trigger {
     width: 100%;
@@ -698,6 +715,10 @@
 
     color: rgba(0, 0, 0, 0.5);
 }
+
+
+
+
 
 
 
@@ -877,14 +898,13 @@
     width: max-content;
     display: flex;
     flex-direction: column;
-    margin: 0 0 10px 0;
     font-weight: 600;
 }
 
 .testi_box_Person_name img {
-    width: 40px;
+    width: 60px;
     border-radius: 50%;
-    margin: 0 0 10px 0;
+    margin: 0 0 5px 0;
     border: 1px solid #DF2B54;
 }
 
@@ -1064,16 +1084,18 @@
     color: rgba(0, 0, 0, 0.87);
 }
 
-ul.accordion-list {
-    position: relative;
-    display: block;
-    width: 100%;
-    list-style: none;
+.faq_wrapper {
+    width: 1240px;
+    max-width: 100%;
+    margin: 30px auto;
+    padding: 0px 20px;
 }
 
-ul.accordion-list li {
-    position: relative;
-    display: block;
+
+
+
+
+.faq_box {
     width: 100%;
     height: auto;
     background-color: #FFF;
@@ -1081,12 +1103,15 @@ ul.accordion-list li {
     margin: 0 auto 15px auto;
 
     border-radius: 10px;
-    cursor: pointer;
 
     border: 1px solid rgba(0, 0, 0, 0.08);
 }
 
-.faq_container h3 {
+
+
+
+
+h3 {
     font-weight: 700;
     position: relative;
     display: block;
@@ -1100,7 +1125,7 @@ ul.accordion-list li {
     color: #222222;
 }
 
-.faq_container h3:after {
+h3:after {
     content: "+";
     font-family: "material-design-iconic-font";
     position: absolute;
@@ -1113,9 +1138,21 @@ ul.accordion-list li {
     font-size: 25px;
 }
 
-ul.accordion-list li.active h3:after {
+.faq_box.active h3:after {
     transform: rotate(45deg);
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 .answer {
     position: relative;
@@ -1131,7 +1168,22 @@ ul.accordion-list li.active h3:after {
     position: relative;
     display: block;
     padding: 10px 0 0 0;
-    cursor: pointer;
-    font-size: 16px;
+    font-size: 14px !important;
     color: #222222;
+}
+
+
+span {
+    display: block;
+    padding: 10px 0 0 0;
+    font-size: 16px !important;
+}
+
+
+span a {
+    text-decoration: none;
+}
+
+span a:hover {
+    text-decoration: none;
 }
