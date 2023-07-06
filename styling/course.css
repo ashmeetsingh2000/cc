@@ -1157,7 +1157,7 @@ g .course_curriculum_image img {
 
 
 
-h3 {
+.faq_box h3 {
     font-weight: 700;
     position: relative;
     display: block;
@@ -1171,7 +1171,11 @@ h3 {
     color: #222222;
 }
 
-h3:after {
+.faq_box h3 span {
+    padding: 0 25px 0 0;
+}
+
+.faq_box h3:after {
     content: "+";
     font-family: "material-design-iconic-font";
     position: absolute;
