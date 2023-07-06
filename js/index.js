@@ -146,7 +146,6 @@ function open_image_close(field) {
 
 
 // video play on full screen
-
 function paly_video(what) {
     let myVideo = document.getElementById(what);
 

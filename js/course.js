@@ -87,3 +87,35 @@ function user_course_click(n) {
     social_meida_plusSlides_two(n)
     caroInterval = setInterval(doStuff_two, 6000);
 }
+
+
+
+
+var Ultimate_Guide_image = document.getElementById('Ultimate_Guide_image')
+function play_thumnail_video() {
+
+    let myVideo = document.getElementById('myVideo_course');
+
+    myVideo.style.display = 'block';
+    Ultimate_Guide_image.style.display = 'block';
+
+    if (myVideo.paused) {
+        if (myVideo.requestFullscreen) {
+            myVideo.requestFullscreen();
+        }
+        else if (myVideo.msRequestFullscreen) {
+            myVideo.msRequestFullscreen();
+        }
+        else if (myVideo.mozRequestFullScreen) {
+            myVideo.mozRequestFullScreen();
+        }
+        else if (myVideo.webkitRequestFullScreen) {
+            myVideo.webkitRequestFullScreen();
+        }
+        myVideo.play();
+    }
+    else {
+        myVideo.pause();
+    }
+
+}

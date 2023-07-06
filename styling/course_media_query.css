@@ -208,6 +208,12 @@
         margin: 90px auto 30px auto;
     }
 
+    .Ultimate_Guide_image video {
+        height: auto;
+        max-height: auto;
+        min-height: auto;
+    }
+
     .Ultimate_Guide_heading {
         font-size: 35px;
         margin: -10px 0 10px 0;
@@ -366,6 +372,18 @@
         padding: 15px;
     }
 
+
+
+    .Ultimate_Guide_play_button {
+        position: absolute;
+        bottom: 10px;
+        left: 10px;
+
+        width: 140px;
+        height: 30px;
+
+        font-size: 14px;
+    }
 }
 
 

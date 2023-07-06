@@ -12,14 +12,60 @@
 .Ultimate_Guide_image {
     width: 48%;
     height: calc(100vh - 400px);
-    max-height: 500px;
+    max-height: 450px;
     min-height: 400px;
     border-radius: 10px;
     overflow: hidden;
 
-    background-image: url('https://i.postimg.cc/y6PTzYmq/Section-first.png');
-    background-position: center top;
+    background-image: url('https://i.postimg.cc/6qhdBBz1/Trailer-Thumbnail.jpg');
+    background-position: center right;
     background-repeat: no-repeat;
+    background-size: cover;
+
+    position: relative;
+}
+
+.Ultimate_Guide_play_button {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    background: #FFF;
+
+    width: 160px;
+    height: 40px;
+
+    color: rgba(0, 0, 0, 0.87);
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.Ultimate_Guide_image video {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+
+    width: 100%;
+    height: calc(100vh - 400px);
+    max-height: 450px;
+    min-height: 400px;
+    background-color: #FFF4F7;
+
+    display: none;
+}
+
+.Ultimate_Guide_play_button:hover {
+    font-weight: 600;
+}
+
+.Ultimate_Guide_play_button svg {
+    margin: 0 10px 0 0;
 }
 
 #Ultimate_Guide_image {
