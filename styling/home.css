@@ -1050,6 +1050,7 @@
     height: 200px;
     margin: 20px 0;
     position: relative;
+    border-radius: 10px;
     overflow: hidden;
     transition: .3s all ease-in-out;
 }
