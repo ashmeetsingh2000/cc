@@ -64,6 +64,10 @@ h3 {
     color: #222222;
 }
 
+h3 span {
+    padding: 0 25px 0 0;
+}
+
 h3:after {
     content: "+";
     font-family: "material-design-iconic-font";
