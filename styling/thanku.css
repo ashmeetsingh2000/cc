@@ -39,30 +39,26 @@
 .tankhu_detail ul li {
     width: 100%;
     padding: 5px 0;
+    font-size: 16px;
 }
 
 
 
 
-@media screen and (max-width: 7000px) {
-    .thanku_text {
-        height: 250px;
-        margin: 70px 0 30px 0;
-    }
 
-    .tankhu_detail p {
-        padding: 10px 0;
-        font-size: 16px;
-        color: #222222;
-    }
-}
-
-@media screen and (max-width: 7000px) {
+@media screen and (max-width: 700px) {
     .thanku_text {
         font-size: 35px;
     }
 
     .tankhu_detail p {
+        font-size: 14px !important;
+    }
+
+
+    .tankhu_detail ul li {
+        width: 100%;
+        padding: 5px 0;
         font-size: 14px;
     }
 }
