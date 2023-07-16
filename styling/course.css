@@ -1113,6 +1113,61 @@ g .course_curriculum_image img {
 
 
 
+
+.price_banner_wrapper {
+    width: 1240px;
+    max-width: 100%;
+    margin: 120px auto 60px auto;
+    padding: 0 20px;
+}
+
+.price_banner_heading {
+    width: 100%;
+    font-family: bebas;
+    font-size: 45px;
+    text-align: center;
+    letter-spacing: 2px;
+
+    color: rgba(0, 0, 0, 0.87);
+}
+
+.price_banner_para {
+    text-align: center;
+    padding: 10px 0 20px 0;
+    font-size: 16px;
+    color: #222222;
+}
+
+
+.price_banner_button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.price_banner_button button {
+    height: 40px;
+    border: 0;
+    padding: 0px 50px;
+    margin: 0 0 10px 0;
+    background-color: #E32652;
+    display: flex;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+
+
+
+
+
+
+
 .faq_container {
     width: 1240px;
     max-width: 100%;
@@ -1134,7 +1189,6 @@ g .course_curriculum_image img {
     width: 1240px;
     max-width: 100%;
     margin: 30px auto;
-    padding: 0px 20px;
 }
 
 
