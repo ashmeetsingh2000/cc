@@ -8,6 +8,11 @@
     src: url(./BebasNeue-Regular.ttf);
 }
 
+@font-face {
+    font-family: bebas_b;
+    src: url(./BebasNeue-Bold.otf);
+}
+
 :root {
     --noraml_text: 16px;
 }
@@ -96,7 +101,6 @@ main {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
 }
 
 .nav_left {
@@ -105,13 +109,17 @@ main {
 }
 
 .company_image {
-    display: flex;
-    align-items: center;
+    text-decoration: none;
+    color: #222222;
+    font-size: 40px;
+    padding: 0;
+    margin: 0 0 -2px 0;
+    font-family: bebas_b;
 }
 
-.company_image img {
+/* .company_image img {
     width: 100%;
-}
+} */
 
 .course_drop_down {
     width: 150px;
