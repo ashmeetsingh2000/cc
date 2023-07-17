@@ -393,6 +393,10 @@
         width: 100%;
     }
 
+    .activity_grid_box {
+        width: 80%;
+        margin: 0 auto;
+    }
 
     .activity_inner_grid {
         grid-template-columns: 1fr;
