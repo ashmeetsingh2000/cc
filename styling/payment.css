@@ -1,6 +1,6 @@
 .payment_form_wrapper {
 
-    width: 800px;
+    width: 900px;
     max-width: 100%;
     margin: 30px auto;
     padding: 0px 20px;
@@ -31,20 +31,22 @@
 
 .payment_image span {
     font-weight: 900;
-    font-size: 20px;
+    font-size: 40px;
     letter-spacing: 1px;
     padding: 0 0 0 20px;
     color: #000000;
+
+    font-family: bebas_b;
 }
 
 
 
 .payment_main_heading {
-    font-weight: 900;
-    font-size: 20px;
+    font-size: 30px;
     letter-spacing: 1px;
     color: #000000;
     margin: 30px 0px 0 0;
+    font-family: bebas;
 }
 
 
@@ -54,6 +56,11 @@
     letter-spacing: 1px;
     color: #000000;
     margin: 30px 0 10px 0;
+}
+
+.payment_skills {
+    width: 350px;
+    max-width: 100%;
 }
 
 .payment_skills p {
@@ -87,11 +94,11 @@
 
 .payment_heading_form {
     width: max-content;
-    font-weight: 900;
-    font-size: 20px;
+    font-size: 30px;
     letter-spacing: 1px;
     color: #000000;
 
+    font-family: bebas;
     padding: 0 0 10px 0;
     margin: 0 0 20px 0;
     border-bottom: 2px solid #E32652;
@@ -156,7 +163,9 @@
 }
 
 .mobile_div {
+    width: 100%;
     display: none;
+    padding: 0px 20px;
 }
 
 
