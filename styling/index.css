@@ -13,6 +13,11 @@
     src: url(./BebasNeue-Bold.otf);
 }
 
+@font-face {
+    font-family: kalam;
+    src: url(./Kalam-Regular.ttf);
+}
+
 :root {
     --noraml_text: 16px;
 }
