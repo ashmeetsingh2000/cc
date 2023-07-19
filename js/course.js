@@ -91,13 +91,16 @@ function user_course_click(n) {
 
 
 
-var Ultimate_Guide_image = document.getElementById('Ultimate_Guide_image')
+var Ultimate_Guide_image = document.getElementById('Ultimate_Guide_image');
+var Ultimate_Guide_play_button = document.getElementById('Ultimate_Guide_play_button');
+
 function play_thumnail_video() {
 
     let myVideo = document.getElementById('myVideo_course');
 
     myVideo.style.display = 'block';
-    Ultimate_Guide_image.style.display = 'block';
+    Ultimate_Guide_image.style.display = 'none';
+    Ultimate_Guide_play_button.style.display = 'none';
 
     if (myVideo.paused) {
         if (myVideo.requestFullscreen) {
