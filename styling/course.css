@@ -339,9 +339,34 @@
 
 .mobilecariculam_grid {
     display: none;
-
+    position: relative;
     text-align: center;
 }
+
+
+
+.mobile_dash_line {
+    position: absolute;
+    top: 0px;
+    left: 20px;
+
+    width: 2px;
+    height: 830px;
+    background-color: rgb(222, 221, 221);
+    z-index: 1;
+}
+
+.adjustment_another_circle {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 3;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background-color: #FED3DD !important;
+}
+
 
 .cariculam_box_grid {
     width: 100%;
@@ -359,6 +384,29 @@
     height: 130px;
 }
 
+.cariculum_box_image img {
+    width: 100%;
+}
+
+
+
+
+
+.mobile_cariculum_box {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.mobile_cariculum_box_image {
+    width: 215px;
+    margin: 0 auto;
+}
+
+.mobile_cariculum_box_image img {
+    width: 100%;
+}
 
 .cariculum_box_detail {
     width: 100%;
@@ -374,6 +422,12 @@
     font-weight: 600;
 }
 
+.mobile_cariculum_box_image {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    overflow: hidden;
+}
+
 .mobile_cariculum_box_detail {
     width: 215px;
     margin: -5px auto;
@@ -381,6 +435,8 @@
     font-weight: 600;
     font-size: 14px;
     padding: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 .special_border_styling {
