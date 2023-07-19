@@ -403,6 +403,9 @@
 .mobile_social_Slides {
     width: 100%;
     text-align: center;
+
+    height: 140px;
+    overflow: hidden;
 }
 
 .mobile_social_Slides img {
