@@ -1302,8 +1302,8 @@ g .course_curriculum_image img {
     justify-content: center;
     letter-spacing: 2px;
     align-items: center;
-    background-color: #E3E8ED;
-    border: 3px solid #8C99A5;
+    background-color: #8C99A5;
+    border: 3px solid#E3E8ED;
 
 }
 
