@@ -257,14 +257,16 @@
         flex-direction: column;
     }
 
+    .testimonila_box_para {
+        height: 120px;
+    }
+
     .testimonial_left_image {
         width: 100%;
         text-align: center;
     }
 
     .testimonial_left_image img {
-        /* width: 200px;
-        height: 250px; */
         margin: 0 auto;
     }
 
@@ -354,6 +356,10 @@
 
     .mobile_review_container {
         display: flex;
+    }
+
+    .testimonila_box_para {
+        height: 290px;
     }
 
 }

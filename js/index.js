@@ -301,7 +301,7 @@ function show_mobile_review_Slides(n) {
 }
 
 
-var mobile_review_Interval = setInterval(do_mobile_review_Stuff, 6000);
+// var mobile_review_Interval = setInterval(do_mobile_review_Stuff, 6000);
 
 function do_mobile_review_Stuff() {
     mobile_review_plusSlides(1)
@@ -310,9 +310,50 @@ function do_mobile_review_Stuff() {
 
 function mobile_review_user_click() {
 
-    clearInterval(mobile_review_Interval);
+    // clearInterval(mobile_review_Interval);
     mobile_review_plusSlides(1)
 
-    mobile_review_Interval = setInterval(do_mobile_review_Stuff, 6000);
+    // mobile_review_Interval = setInterval(do_mobile_review_Stuff, 6000);
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function Redirect(which) {
+
+    let current_url;
+
+    if (window.location.href.includes('index')) {
+        current_url = window.location.href.slice(0, -11);
+    }
+    else {
+        current_url = window.location.href.slice(0, -1);
+
+    }
+
+    if (which == 'course_1') {
+        location.replace(`${current_url}/course.html`);
+    }
+    if (which == 'course_2') {
+        location.replace(`${current_url}/`);
+    }
+    if (which == 'course_3') {
+        location.replace(`${current_url}/`);
+    }
 
 }
