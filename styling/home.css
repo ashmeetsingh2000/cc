@@ -394,6 +394,18 @@
     width: 100%;
 }
 
+.praise_testimonial_grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 20px;
+}
+
+.praise_testimonial_grid img {
+    border-radius: 5px;
+}
+
+
 .mobile_review_Slides {
     width: 100%;
     text-align: center;
@@ -404,7 +416,7 @@
     width: 100%;
     text-align: center;
 
-    height: 140px;
+    /* height: 140px; */
     overflow: hidden;
 }
 
