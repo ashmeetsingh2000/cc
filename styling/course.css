@@ -764,13 +764,14 @@ g .course_curriculum_image img {
     position: absolute;
     right: 0;
     top: 35px;
+    transform: rotate(180deg);
 
     transition: all 0.3s ease-in-out;
 }
 
 .activity_box.active .activity_trigger_text_heading:after {
     transition: all 0.3s ease-in-out;
-    transform: rotate(180deg);
+    transform: rotate(0deg);
 }
 
 .activity_trigger_text_para {
