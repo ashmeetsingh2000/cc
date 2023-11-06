@@ -86,13 +86,6 @@
     padding: 20px;
 }
 
-.payment_details_box form {
-    height: 350px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
 .payment_heading_form {
     width: max-content;
     font-size: 30px;
@@ -113,6 +106,7 @@
     align-items: center;
 
     position: relative;
+    margin: 0 0 25px 0;
 }
 
 .prompt_text {
@@ -164,7 +158,7 @@
 
 .payment_form_grid button {
     width: 50%;
-    padding: 7px 0;
+    padding: 10px 0;
     border: 0;
     background-color: #E32652;
     display: flex;
@@ -184,6 +178,29 @@ button {
     width: 100%;
     display: none;
     padding: 0px 20px;
+}
+
+.Special_styling {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Special_styling span {
+    margin: 0 0 0 20px;
+    padding: 4px 20px;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 1px solid black;
+}
+
+#hidden_message {
+    color: #4E8000;
+    font-size: 16px;
+    margin: 5px 0 0 0;
+    display: none;
 }
 
 

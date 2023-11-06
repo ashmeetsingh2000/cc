@@ -150,58 +150,58 @@
                         <div class="payment_form_grid">
 
                             <label for="full_Name">Full Name</label>
-                            <input type="text" name="full_Name" id="full_Name" required />
+                            <input type="text" name="full_Name" id="full_Name" />
+
+                        </div>
+
+                        <div class="payment_form_grid" style="margin: 0 0 40px 0;">
+
+                            <label for="email_Id">Email ID</label>
+                            <input type="email" name="email_Id" id="email_Id" />
+                            <div class="prompt_text">You will get course access on this Email ID</div>
+
+                        </div>
+
+                        <div class="payment_form_grid" style="margin: 0 0 40px 0;">
+
+                            <label for="phone">Phone</label>
+                            <input type="text" name="phone" id="phone" />
+                            <div class="prompt_text">Future WhatsApp Community Access</div>
 
                         </div>
 
                         <div class="payment_form_grid">
-
-                            <label for="email_Id">Email ID</label>
-                            <input type="email" name="email_Id" id="email_Id" required />
-                            <div class="prompt_text">You will get course access on this Email ID</div>
-                        </div>
-
-                        <div class="payment_form_grid" style="margin: 10px 0 0 0;">
-
-                            <label for="phone">Phone</label>
-                            <input type="text" name="phone" id="phone" required />
-                            <div class="prompt_text">Future WhatsApp Community Access</div>
-                        </div>
-
-                        <div class="payment_form_grid" style="margin: 10px 0 0 0;">
 
                             <label for="amount">Amount (Rs.)</label>
                             <input type="text" name="amount" id="amount" value="Rs. 999" readonly />
 
                         </div>
 
-                        <div class="payment_form_grid" style="margin: -10px 0 0 0;">
+                        <div class="payment_form_grid" style="display: block;">
 
-                            <label for="coupon" style="font-size: 13px;">Coupon Code</label>
+                            <p style="font-size: 13px;">Coupon Code (Optional)</p>
 
-                        </div>
+                            <div class="Special_styling">
 
-                        <div class="payment_form_grid" style="margin: -25px 0 0 0;">
-
-                            <div>
                                 <input type="text" style="width: 90%;" name="coupon" id="coupon" />
+                                <span class="apply_button_styling" onclick="add_coupon()">Apply</span>
+
                             </div>
-                            <button>
-                                <span>Apply</span>
-                            </button>
+                            <p id="hidden_message" style="margin: 0 0 -5px 0;">
+                                Congratulations, You have received INR 100 Discount.
+                            </p>
 
                         </div>
 
-
-                        <div class="payment_form_grid" style="margin: 8px 0 0 0;">
+                        <div class="payment_form_grid" style="margin: 0 0 10px 0;">
 
                             <div class="payment_form_image">
-                                <img src="https://i.postimg.cc/kXgtS2B4/payment-icons.jpg" alt="" />
+                                <img src="" alt="" />
                             </div>
 
                             <button>
                                 <span>Pay Rs. &nbsp;</span>
-                                <span>999</span>
+                                <span id="total_price_tobe_paid">999</span>
                             </button>
 
                         </div>
@@ -369,6 +369,25 @@
     </main>
 
     <script src="./js/index.js"></script>
+
+    <script>
+        var coupon_box = document.getElementById('coupon');
+        var total_price_tobe_paid = document.getElementById('total_price_tobe_paid');
+        var Total_amount = document.getElementById('amount');
+        var hidden_message = document.getElementById('hidden_message');
+        function add_coupon() {
+            hidden_message.style.display = 'none';
+            if (coupon_box.value == 'cc10' || coupon_box.value == 'CC10' || coupon_box.value == 'Cc10' || coupon_box.value == 'cC10') {
+                Total_amount.value = '899';
+                total_price_tobe_paid.innerHTML = '899';
+                hidden_message.style.display = 'block';
+            }
+            else {
+                Total_amount.value = '999';
+                total_price_tobe_paid.innerHTML = '999';
+            }
+        }
+    </script>
 
 </body>
 
