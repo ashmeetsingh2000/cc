@@ -1,4 +1,5 @@
 
+// ================== Social Medis Community carousal ======================
 let course_slide_index = 1;
 show_testi_Slides(course_slide_index);
 
@@ -46,7 +47,7 @@ function user_click(n) {
 
 
 
-
+// Social Medis Community carousal Mobile part
 let slideIndex_two = 1;
 show_testi_Slides_two(slideIndex_two);
 
@@ -87,6 +88,16 @@ function user_course_click(n) {
     social_meida_plusSlides_two(n)
     caroInterval = setInterval(doStuff_two, 6000);
 }
+// ================== Social Medis Community carousal ======================
+
+
+
+
+
+
+
+
+
 
 
 
@@ -122,3 +133,69 @@ function play_thumnail_video() {
     }
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// ====== [ Course Testimonial ] =============
+let course_testi_slideIndex = 1;
+show_course_testimonial_Slides(course_testi_slideIndex);
+
+function plusSlides(n) {
+    show_course_testimonial_Slides(course_testi_slideIndex += n);
+}
+
+function currentSlide(n) {
+    show_course_testimonial_Slides(course_testi_slideIndex = n);
+}
+
+function show_course_testimonial_Slides(n) {
+    let i;
+    let slides = document.getElementsByClassName("course_mySlides");
+    let dots = document.getElementsByClassName("Course_dot");
+    if (n > slides.length) { course_testi_slideIndex = 1 }
+    if (n < 1) { course_testi_slideIndex = slides.length }
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[course_testi_slideIndex - 1].style.display = "block";
+    dots[course_testi_slideIndex - 1].className += " active";
+}
+
+var carousalInterval = setInterval(doStuff, 6000);
+
+function doStuff() {
+    plusSlides(1)
+}
+
+function user_click(n) {
+    clearInterval(carousalInterval);
+    plusSlides(n)
+    carousalInterval = setInterval(doStuff, 6000);
+}
+
+function stop_auto_carousal() { }
+function continue_auto_carousal() { }
+
+// ====== [ Course Testimonial ] =============

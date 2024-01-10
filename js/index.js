@@ -96,10 +96,6 @@ function show_testi_Slides(n) {
     dots[slideIndex - 1].className += " active";
 }
 
-
-
-
-
 var carousalInterval = setInterval(doStuff, 6000);
 
 function doStuff() {
